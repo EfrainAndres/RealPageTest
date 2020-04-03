@@ -1,0 +1,317 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-03T08:10:01.602Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5934285500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.setWebDriver()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User can search with \"Google Search\"",
+        "description": "",
+        "id": "google-homepage-search;user-can-search-with-\"google-search\"",
+        "after": [
+          {
+            "result": {
+              "duration": 655836600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TearDown.quitDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3598051400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I’m on the homepage \"https://www.google.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.google.com/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchSteps.iMOnTheHomepage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2448015600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I type \"The name of the wind\" into the search field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The name of the wind\"",
+                  "offset": 7
+                }
+              ],
+              "location": "SearchSteps.iTypeIntoTheSearchField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4864454500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click the Google Search button",
+            "match": {
+              "location": "SearchSteps.iClickTheGoogleSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2049003200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the search results page",
+            "match": {
+              "location": "SearchSteps.iGoToTheSearchResultsPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2081342200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the first result is \"The Name of the Wind - Wikipedia\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The Name of the Wind - Wikipedia\"",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchSteps.theFirstResultIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6768624700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on the first result link",
+            "match": {
+              "location": "SearchSteps.iClickOnTheFirstResultLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7158783600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I go to the \"Patrick Rothfuss - The Books\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Patrick Rothfuss - The Books\"",
+                  "offset": 12
+                }
+              ],
+              "location": "SearchSteps.iGoToThePage(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-03T08:10:37.166Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5164699000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.setWebDriver()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "User can search by using the suggestions",
+        "description": "",
+        "id": "google-homepage-search;user-can-search-by-using-the-suggestions",
+        "after": [
+          {
+            "result": {
+              "duration": 641946700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TearDown.quitDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4143333700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I’m on the homepage \"https://www.google.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.google.com/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchSteps.iMOnTheHomepage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2171293500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I type \"The name of the w\" into the search field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The name of the w\"",
+                  "offset": 7
+                }
+              ],
+              "location": "SearchSteps.iTypeIntoTheSearchField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2033448600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the suggestions list is displayed",
+            "match": {
+              "location": "SearchSteps.theSuggestionsListIsDisplayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4001268600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on the first suggestion in the list",
+            "match": {
+              "location": "SearchSteps.iClickOnTheFirstSuggestionInTheList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2035311500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I go to the search results page",
+            "match": {
+              "location": "SearchSteps.iGoToTheSearchResultsPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2035307800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the first result is \"The Name of the Wind - Wikipedia\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The Name of the Wind - Wikipedia\"",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchSteps.theFirstResultIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5944563400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click on the first result link",
+            "match": {
+              "location": "SearchSteps.iClickOnTheFirstResultLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9391957100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I go to the \"Patrick Rothfuss - The Books\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Patrick Rothfuss - The Books\"",
+                  "offset": 12
+                }
+              ],
+              "location": "SearchSteps.iGoToThePage(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Search"
+          }
+        ]
+      }
+    ],
+    "name": "Google Homepage Search",
+    "description": "",
+    "id": "google-homepage-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/GoogleSearch/Search.feature",
+    "tags": []
+  }
+]
